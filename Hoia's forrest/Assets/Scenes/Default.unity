@@ -566,8 +566,8 @@ MonoBehaviour:
   jumpCost: 20
   hasRegenerated: 1
   weAreSprinting: 0
-  staminaDrain: 15
-  staminaRegen: 5
+  staminaDrain: 35
+  staminaRegen: 20
   slowedRunSpeed: 5
   normalRunSpeed: 15
   staminaProgressUI: {fileID: 1399615009}
@@ -628,7 +628,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264913772}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0

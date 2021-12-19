@@ -53,19 +53,20 @@ public class StaminaController : MonoBehaviour
 
     public void Sprinting()
     {
-        if (hasRegenerated)
-        {
-            weAreSprinting = true;
-            playerStamina -= staminaDrain * Time.deltaTime;
-            UpdateStamina(1);
 
-            if (playerStamina <= 0)
+            if (hasRegenerated)
             {
-                hasRegenerated = false;
-                playerController.SetRunSpeed(slowedRunSpeed);
-                sliderCanvasGroup.alpha = 0;
+                weAreSprinting = true;
+                playerStamina -= staminaDrain * Time.deltaTime;
+                UpdateStamina(1);
+
+                if (playerStamina <= 0)
+                {
+                    hasRegenerated = false;
+                    playerController.SetRunSpeed(slowedRunSpeed);
+                    sliderCanvasGroup.alpha = 0;
+                }
             }
-        }
     }
 
     public void StaminaJump()
