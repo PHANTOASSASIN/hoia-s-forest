@@ -72,7 +72,7 @@ public class StaminaController : MonoBehaviour
 
     public void StaminaJump()
     {
-        if(playerStamina >= (maxStamina * jumpCost / maxStamina))
+        if(playerStamina >= jumpCost)
         {
             playerStamina -= jumpCost;
             playerController.PlayerJump();
