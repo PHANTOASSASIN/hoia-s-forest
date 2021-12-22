@@ -17,6 +17,11 @@ public class Flashlight_PRO : MonoBehaviour
 	private Material ambient_light_material;
 	private Color ambient_mat_color;
 	private bool is_enabled = true;
+	public bool drainOverTime;
+	public float maxBrightness;
+	public float minBrightness;
+	public float drainRate;
+	public float amount;
 
 
 
@@ -34,29 +39,30 @@ public class Flashlight_PRO : MonoBehaviour
 		ambient_light_material = Lights.transform.Find ("ambient").GetComponent<Renderer> ().material;
 		ambient_mat_color = ambient_light_material.GetColor ("_TintColor");
 	}
-	
-
-
 
 
 
 	/// <summary>
 	/// changes the intensivity of lights from 0 to 100.
 	/// call this from other scripts.
-	/// </summary>
-	public void Change_Intensivity(float percentage)
-	{
-		percentage = Mathf.Clamp (percentage, 0, 100);
-
-
-		spotlight.intensity = (8 * percentage) / 100;
-
-		ambient_light_material.SetColor ("_TintColor", new Color(ambient_mat_color.r , ambient_mat_color.g , ambient_mat_color.b , percentage/2000)); 
-	}
-
+	/// </summary
 
 	private void Update()
     {
+		spotlight.intensity = Mathf.Clamp(spotlight.intensity, minBrightness, maxBrightness);
+		if (drainOverTime == true && is_enabled == true)
+        {
+			if(spotlight.intensity > minBrightness)
+            {
+				spotlight.intensity -= Time.deltaTime * (drainRate / 1000);
+            }
+        }
+		
+		if (Input.GetKeyDown(KeyCode.R))
+        {
+			ReplaceBattery();
+        }
+
         if (Input.GetKeyDown(KeyCode.F))
         {
 			Switch();
@@ -102,6 +108,11 @@ public class Flashlight_PRO : MonoBehaviour
 			}
 		}
 	}
+
+	public void ReplaceBattery()
+    {
+		spotlight.intensity += amount;
+    }
 
 
 }
