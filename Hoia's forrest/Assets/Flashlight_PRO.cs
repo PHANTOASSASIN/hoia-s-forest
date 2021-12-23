@@ -111,5 +111,4 @@ public class Flashlight_PRO : MonoBehaviour
 		spotlight.intensity += amount;
     }
 
-
 }

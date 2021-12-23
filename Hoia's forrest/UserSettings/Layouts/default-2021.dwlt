@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 18
+  controlID: 16
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 19
+  controlID: 17
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 20
+  controlID: 69
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -317,22 +317,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 87
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: 87
   m_LastProjectPath: E:\Unity\Proiecte\hoia-s-forest\Hoia's forrest
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 76}
-    m_SelectedIDs: 74610000
-    m_LastClickedID: 24948
-    m_ExpandedIDs: 000000007461000076610000786100007a6100007c6100007e610000ae6100000262000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 56c10000
+    m_LastClickedID: 49494
+    m_ExpandedIDs: 0000000050c1000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -360,7 +360,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007461000076610000786100007a6100007c6100007e610000
+    m_ExpandedIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -391,18 +391,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Flashlight
-      m_OriginalName: Flashlight
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 28756
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
@@ -488,23 +488,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 7a8e0000
+      m_SelectedIDs: 56c10000
       m_LastClickedID: 0
-      m_ExpandedIDs: dcfaffffecfafffff4faffff00fbffff6c600000
+      m_ExpandedIDs: bcabffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: led
-        m_OriginalName: led
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -1342
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -739,9 +739,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -30.112108, y: -21.783731, z: 54.01327}
+    m_Target: {x: -55.88733, y: -15.718968, z: -34.28793}
     speed: 2
-    m_Value: {x: -30.112108, y: -21.783731, z: 54.01327}
+    m_Value: {x: -55.88733, y: -15.718968, z: -34.28793}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -788,13 +788,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.15022221, y: -0.289879, z: 0.045918096, w: 0.94358045}
+    m_Target: {x: 0.06834837, y: -0.8209248, z: 0.10039639, w: 0.5571174}
     speed: 2
-    m_Value: {x: 0.15036243, y: -0.28860053, z: 0.045714453, w: 0.9444634}
+    m_Value: {x: 0.06754368, y: -0.8214654, z: 0.09921285, w: 0.5574848}
   m_Size:
     m_Target: 45.64601
     speed: 2
-    m_Value: 43.680393
+    m_Value: 45.64601
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -888,11 +888,11 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 21
+      y: 0
       width: 841
-      height: 608
+      height: 629
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 420.5, y: 304}
+    m_Translation: {x: 420.5, y: 314.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -900,9 +900,9 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -420.5
-      y: -304
+      y: -314.5
       width: 841
-      height: 608
+      height: 629
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 841, y: 629}
