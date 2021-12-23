@@ -13,7 +13,7 @@ public class Flashlight_PRO : MonoBehaviour
 
 
 
-	private Light spotlight;
+	public Light spotlight;
 	private Material ambient_light_material;
 	private Color ambient_mat_color;
 	private bool is_enabled = true;
@@ -58,10 +58,7 @@ public class Flashlight_PRO : MonoBehaviour
             }
         }
 		
-		if (Input.GetKeyDown(KeyCode.R))
-        {
-			ReplaceBattery();
-        }
+		
 
         if (Input.GetKeyDown(KeyCode.F))
         {
