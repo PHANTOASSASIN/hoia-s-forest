@@ -22,6 +22,10 @@ public class Flashlight_PRO : MonoBehaviour
 	public float minBrightness;
 	public float drainRate;
 	public float amount;
+	public float shootingBrightness;
+	private float spotIntensity;
+	public float flashTime;
+	public float consumedBatteryShoot;
 
 
 
@@ -63,6 +67,11 @@ public class Flashlight_PRO : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
 			Switch();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+			Shoot();
         }
     }
 
@@ -110,5 +119,20 @@ public class Flashlight_PRO : MonoBehaviour
     {
 		spotlight.intensity += amount;
     }
+
+	public void Shoot()
+    {
+		spotIntensity = spotlight.intensity;
+		spotlight.intensity = shootingBrightness;
+
+		//wait
+
+		Invoke("Unshoot", 0.1f);
+	}
+
+	public void Unshoot()
+    {
+		spotlight.intensity = spotIntensity - consumedBatteryShoot;
+	}
 
 }

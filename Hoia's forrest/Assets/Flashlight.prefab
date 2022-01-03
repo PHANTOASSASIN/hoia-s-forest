@@ -55,7 +55,9 @@ MonoBehaviour:
   maxBrightness: 10
   minBrightness: 0.1
   drainRate: 1000
-  amount: 1000
+  amount: 100
+  shootingBrightness: 0
+  flashTime: 1
 --- !u!82 &2173223944642645201
 AudioSource:
   m_ObjectHideFlags: 0
