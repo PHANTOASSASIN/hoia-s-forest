@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Objectives : MonoBehaviour
 {
@@ -21,5 +22,17 @@ public class Objectives : MonoBehaviour
     public void takeCanister2()
     {
         hasCanister2 = true;
+    }
+
+    void OnTriggerEnter(Collider collider)
+    {
+        if (collider.gameObject.tag == "Player")
+        {
+            if (hasCanister1 == true && hasCanister2 == true && hasKeys == true)
+            {
+                SceneManager.LoadScene("Winning screen");
+                Debug.Log("amangas");
+            }
+        }
     }
 }
