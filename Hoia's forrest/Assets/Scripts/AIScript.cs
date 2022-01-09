@@ -118,8 +118,7 @@ public class AIScript : MonoBehaviour
 
 
 
-    private int walkspeed1;
-    private int runspeed1;
+
 
 
     //---Starting/Initializing functions---//
@@ -1005,6 +1004,7 @@ public class AIScript : MonoBehaviour
         }
 
     }
+
 
 
 }
